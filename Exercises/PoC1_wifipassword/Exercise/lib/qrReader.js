@@ -1,5 +1,6 @@
 var video = document.createElement("video");
 var canvasElement = document.createElement("canvas");
+//var canvasElement = document.getElementById("canvas");
 var canvas = canvasElement.getContext("2d");
 
 navigator.mediaDevices.getUserMedia({
