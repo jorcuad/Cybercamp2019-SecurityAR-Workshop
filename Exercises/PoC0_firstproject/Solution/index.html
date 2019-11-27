@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+  <html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>First AR project!</title>
+    <!-- Here goes the AR Libraries -->
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+    <script src="https://raw.githack.com/jeromeetienne/AR.js/2.0.8/aframe/build/aframe-ar.js"></script>
+    <!-- Here goes the styles of our aplication -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+
+  <body>
+    <!-- Inside the body we have to place the AR.js elements -->
+    <a-scene embedded vr-mode-ui='enabled: false' arjs='sourceType: webcam; trackingMethod: best;
+       debugUIEnabled: false;' renderer='logarithmicDepthBuffer: true;'>
+      <!-- Define here which marker we will use -->
+      <a-marker preset="hiro">
+        <!-- When the marker is detected by the camera we want appearing, for example, an spinning box -->
+        <a-box position='0 1 0' material='color: red;' animation="property: rotation; dur: 3000; to: 0 360 0; loop: true">
+        </a-box>
+      </a-marker>
+      <!--We have to add the camera to our scene -->
+      <a-entity camera></a-entity>
+    </a-scene>
+    <!-- If we want something more in the screen than only our camera, we should add some interface -->
+    <div id="interface">
+      <div id="nav">
+        <img class="logo" src="static/cybercamp-logo.png"/>
+        <div class="title-container">
+          <span class="title">¡Y se ARmó la Marimorena!</span>
+          <span class="subtitle">Seguridad en Realidad Aumentada</span>
+        </div>
+      </div>
+      <div id="leftblack">
+        <img class="nodebg" src="static/node-filter.png"/>
+        <div class="left-container">
+          <span class="poc-name">PoC0: First Project</span>
+        </div>
+      </div>
+      <div id="rightblack">
+        <img class="nodebg" src="static/node-filter.png"/>
+      </div>
+      <div id="footer">
+        <div class="footer-container">
+          <span class="title">Puedes preguntarnos por Twitter:</span>
+          <span class="subtitle">@Coke727 & @MiguelHzBz en #CybercampMarimorena</span>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  </html>
