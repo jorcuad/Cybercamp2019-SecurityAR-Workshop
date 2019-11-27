@@ -1,4 +1,4 @@
-# Cybercamp2019-Cybersecurity-with-AR
+# Cybercamp2019 Cybersecurity With AR
 Augmented Reality (AR) is a technology that allows us to show digital objects inside the physical reality using a special set of glasses or a smartphone. This appealing technology is closer than ever and in this workshop we would like to anticipate the future in an exercise of innovation. You will not only learn how this technology works and some keys to keep in mind when working with it but also how to develop different solutions to make our physical spaces more secure digitally.
 
 # Contents
